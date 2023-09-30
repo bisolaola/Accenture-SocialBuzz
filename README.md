@@ -23,10 +23,9 @@ Task include:
 For this task, three relational dataset was provide with a variable description and data model in a star schema format, reaction table, reactiontype table and content table. 
 Data model identified the field 'score' as the rational for quantifying the popularity of each reaction type. 
 
-To this analysis, the following was conducted:
-1. Requirement gathering
-     Understanding the project brief and data
-     Develop a business question 
+The following was conducted fot this analysis:
+1. Requirement gathering:
+     Understanding the project brief/data and develop a business question 
 3. Data cleaning
 4. Data Modelling
 5. Analysis
