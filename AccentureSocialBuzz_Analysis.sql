@@ -2,7 +2,7 @@
 DROP TABLE IF EXISTS content;
 CREATE TABLE IF NOT EXISTS content 
 (
-	sn INT, --remove the header of this
+	sn INT, 
 	content_id VARCHAR,
 	user_id VARCHAR, 
 	type VARCHAR,
@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS content
 DROP TABLE IF EXISTS reactions;
 CREATE TABLE IF NOT EXISTS reactions 
 (
-	sn INT, --remove the header of this later
+	sn INT, 
 	content_id VARCHAR,
 	user_id VARCHAR, 
 	type VARCHAR,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS reactions
 DROP TABLE IF EXISTS reactiontype;
 CREATE TABLE IF NOT EXISTS reactiontype
 (
-	sn INT, --remove the header of this later
+	sn INT, 
 	type VARCHAR,
 	sentiment VARCHAR, 
 	score INT
@@ -56,7 +56,6 @@ SELECT category, COUNT(*) AS total_category
 FROM content
 GROUP BY category;
 --categories contains records with "" double quotation mark 
--- to delete ""
 UPDATE content
 SET category = REPLACE(category, '"', '');
 
@@ -72,13 +71,13 @@ WHERE content_id IS NULL OR content_type IS NULL OR category IS NULL;
 ---no null records in content table 
 
 --combine duplicates from categories
---come categories are same but come in different cases. 
+--count categories are same but come in different cases. 
 UPDATE content
 SET category = LOWER(category);
 
 SELECT *
 FROM content;
--- still 1000 rows in total after cleaning 
+-- 1000 rows after cleaning 
 
 -------------------------reaction table------------ 
 SELECT *
