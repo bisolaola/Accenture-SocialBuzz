@@ -22,4 +22,5 @@ The following was conducted for this analysis:
 5. Analysis
 6. Highlighting and visualization of insights
 
-
+# Dashboard
+![Dashboard](https://github.com/bisolaola/Accenture-SocialBuzz/assets/137617628/6f4cc807-d21b-4854-8b76-39046d5ee079)
