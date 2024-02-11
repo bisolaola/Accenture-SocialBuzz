@@ -258,7 +258,8 @@ ORDER BY 2 DESC, 3 DESC, 4 DESC;
 ------------------------DATA VISUALISATION---------------------------------
 --Data visualisation for this project would be conducted in Power BI
 --These results were loaded into power BI for visualisation and further analysis 
---Please see README.md for visualisation
+--Please see README.md for visualisation. 
+
 
 
 
