@@ -1,16 +1,59 @@
-# Accenture-SocialBuzz
-This project is from Accenture Virtual Internship program on theForage.com. 
+# Social Buzz Content Analysis - From Data to Dashboard!
 
-This is an analysis conducted for an Accenture client called Social Buzz. 
+    Data Preparation, Cleaning, Modeling in SQL.
+    Analysis in SQL and Power BI.
 
-As the data analyst, the major role played in the team was to focus on working on analysing Social Buzz content categories that highlights the top 5 categories with the largest aggregate popularity. For this project, three relational dataset (reaction table, reactiontype table and content table) was provide with variable description and data model in a star schema format. The data model identified the field 'score' as the rational for quantifying the popularity of each reaction type. 
+# Data Preparation and Cleaning
 
-The following was conducted for this analysis:
-1. Requirement gathering:
-3. Data cleaning
-4. Data Modelling
-5. Analysis
-6. Highlighting and visualization of insights
+There's a saying that the output of your analysis will only be as good as the dataset that has been used as an input. Essentially, garbage in, garbage out. This encapsulates the fundamental rationale behind data cleaning.
+
+Firstly, let's get a brief understanding of the dataset for this project. The dataset is from an Accenture Virtual Internship program on theForage.com.  Analysis is for a frictional Accenture client called Social Buzz. Social Buzz is a technology company in the social media and content creation industry, currently experiencing rapid and unanticipated growth and would like to analyse its content categories to identify the 5 most popular Social Buzz content. 
+
+Now that we're familiar with the dataset, let's discuss the role I played.
+
+As the data analyst on the team, my major role was to analyse Social Buzz content categories, highlighting the top 5 categories with the largest aggregate popularity. The burning business question is "What are the 5 top-performing categories of Social Buzz?". To answer this question, I followed these key steps: 
+
+1. Data Preparation and Cleaning
+4. Data Modeling
+5. Data Analysis
+6. Visualisation of Insights
+
+Now, back to data preparation and cleaning, the foundation of all analysis. Preparing the data, I meticulously looked out for missing values, redunancies in data, outliner(s), data patterns/data types. Overall, I:
+
+- Removed rows that had values which are missing
+- Changed the data type of some values within a column
+- Removed columns which are not relevant to the business question or to the analysis.
+
+Whats next?
+
+# Data Modeling
+
+Well, my next step involved delving into the relationship between the three relational tables, distinguishing the fact table from the dimension tables. Subsequently, I utilised inner join to merge these tables while implementing necessary data modifications along the way.  
+
+# Analysis 
+
+    KPI: Score
+    Score quantify the popularity of each reaction type.
+
+To gain a deeper understanding of the key insights, I transitioned into conducting analysis centered around the core business question. I was particularly curious about what really are these top-performing categories. The result shows 
+
+    Top-performing categories: Animal, Science, Healthy Eating, Technology and Food respectively. 
+
+Further analysis was then conducted to uncover the underlying factors influencing these results. It revealed that content type (including whether it was posted as a photo, video, audio, etc.) and the day of the week (content preferences varied based on different days of the week) played pivotal roles.
+
+# Data Visualisation
+
+The data was loaded into Power BI for further analysis and visalisation 
+
+    Results: 
+    - Content type, day of the week are drivers of activities
+    - Thursdays are the most active days of the week
+
+    Insights: 
+    - Animal and science are the two most popular content categories, showing that most users are animal lovers and have a desire for scientific knowledge. 
+    - Food content are very popular, both healthy and unhealthy. This indicates that users enjoy a wide range of culinary experiences, from balanced meals to occasional treats. 
+
+Below is the dashboard. #OKBye!
 
 # Dashboard
-![Dashboard](https://github.com/bisolaola/Accenture-SocialBuzz/assets/137617628/6f4cc807-d21b-4854-8b76-39046d5ee079)
+![Dashboard](image.png)
