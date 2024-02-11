@@ -30,6 +30,13 @@ Whats next?
 
 Well, my next step involved delving into the relationship between the three relational tables, distinguishing the fact table from the dimension tables. Subsequently, I utilised inner join to merge these tables while implementing necessary data modifications along the way.  
 
+    SELECT rt.content_id, ct.content_type, rt.datetime,  rtp.sentiment, ct.category, rt.reaction_type, rtp.score
+    FROM reactions AS rt
+    INNER JOIN content AS ct
+    ON rt.content_id = ct.content_id
+    INNER JOIN reactiontypes AS rtp
+    ON rt.reaction_type = rtp.reaction_type;
+
 # Analysis 
 
     KPI: Score
@@ -37,23 +44,38 @@ Well, my next step involved delving into the relationship between the three rela
 
 To gain a deeper understanding of the key insights, I transitioned into conducting analysis centered around the core business question. I was particularly curious about what really are these top-performing categories. The result shows 
 
-    Top-performing categories: Animal, Science, Healthy Eating, Technology and Food respectively. 
+    SELECT DISTINCT category, SUM(score) OVER (PARTITION BY category) AS totalscore_by_category
+    FROM reactions AS rt
+    LEFT JOIN content AS ct
+    ON rt.content_id = ct.content_id
+    LEFT JOIN reactiontypes AS rtp
+    ON rt.reaction_type = rtp.reaction_type
+    GROUP BY rt.datetime, category, score
+    ORDER BY totalscore_by_category DESC
+    --top 5 categories 
+    LIMIT 5;
 
+    Top-performing categories: Animal, Science, Healthy Eating, Technology and Food respectively. 
+    
+ 
 Further analysis was then conducted to uncover the underlying factors influencing these results. It revealed that content type (including whether it was posted as a photo, video, audio, etc.) and the day of the week (content preferences varied based on different days of the week) played pivotal roles.
 
 # Data Visualisation
 
 The data was loaded into Power BI for further analysis and visalisation 
 
-    Results: 
-    - Content type, day of the week are drivers of activities
-    - Thursdays are the most active days of the week
+Results: 
+- Content type, day of the week are drivers of activities
+- Thursdays are the most active days of the week
 
-    Insights: 
-    - Animal and science are the two most popular content categories, showing that most users are animal lovers and have a desire for scientific knowledge. 
-    - Food content are very popular, both healthy and unhealthy. This indicates that users enjoy a wide range of culinary experiences, from balanced meals to occasional treats. 
+Insights: 
+- Animal and science are the two most popular content categories, showing that most users are animal lovers and have a desire for scientific knowledge.
+- Food content are very popular, both healthy and unhealthy. This indicates that users enjoy a wide range of culinary experiences, from balanced meals to occasional treats. 
+
+Check out the full SQL queries and feel free to reach out for contributions or questions. 
 
 Below is the dashboard. #OKBye!
+
 
 # Dashboard
 ![Dashboard](image.png)
