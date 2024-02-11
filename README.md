@@ -1,4 +1,5 @@
 # Social Buzz Content Analysis - From Data to Dashboard!
+# Data Preparation, Cleaning, Modeling in SQL/ Analysis in SQL and Power BI
 # Dashboard
 
 <img width="1158" alt="image" src="https://github.com/bisolaola/Accenture-SocialBuzz/assets/137617628/e08cb183-49f7-4aa4-b991-5cc385c6416c">
@@ -73,7 +74,9 @@ Insights:
 - Animal and science are the two most popular content categories, showing that most users are animal lovers and have a desire for scientific knowledge.
 - Food content are very popular, both healthy and unhealthy. This indicates that users enjoy a wide range of culinary experiences, from balanced meals to occasional treats. 
 
+See the dashboard at the top of the page. 
+
 Check out the full SQL queries and feel free to reach out for contributions or questions. 
 
-See the dashboard at the top of the page. #OKBye!
+#OKBye!
 
