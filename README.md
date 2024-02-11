@@ -1,7 +1,8 @@
 # Social Buzz Content Analysis - From Data to Dashboard!
+# Dashboard
 
-    Data Preparation, Cleaning, Modeling in SQL.
-    Analysis in SQL and Power BI.
+<img width="1158" alt="image" src="https://github.com/bisolaola/Accenture-SocialBuzz/assets/137617628/e08cb183-49f7-4aa4-b991-5cc385c6416c">
+
 
 # Data Preparation and Cleaning
 
@@ -74,9 +75,5 @@ Insights:
 
 Check out the full SQL queries and feel free to reach out for contributions or questions. 
 
-Below is the dashboard. #OKBye!
+See the dashboard at the top of the page. #OKBye!
 
-
-# Dashboard
-
-<img width="1158" alt="image" src="https://github.com/bisolaola/Accenture-SocialBuzz/assets/137617628/e08cb183-49f7-4aa4-b991-5cc385c6416c">
