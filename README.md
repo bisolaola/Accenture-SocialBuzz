@@ -78,4 +78,5 @@ Below is the dashboard. #OKBye!
 
 
 # Dashboard
-![Dashboard](image.png)
+
+<img width="1158" alt="image" src="https://github.com/bisolaola/Accenture-SocialBuzz/assets/137617628/e08cb183-49f7-4aa4-b991-5cc385c6416c">
